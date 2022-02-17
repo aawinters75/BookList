@@ -25,7 +25,7 @@ public class BookItem {
 	@Column(name="AUTHOR")
 	private String author;
 	@Column(name="ISBN")
-	private int ISBN;
+	private String ISBN;
 	
 	
 	
@@ -86,7 +86,7 @@ public class BookItem {
 	/**
 	 * @return the iSBN
 	 */
-	public int getISBN() {
+	public String getISBN() {
 		return ISBN;
 	}
 
@@ -95,7 +95,7 @@ public class BookItem {
 	/**
 	 * @param iSBN the iSBN to set
 	 */
-	public void setISBN(int iSBN) {
+	public void setISBN(String iSBN) {
 		ISBN = iSBN;
 	}
 
@@ -105,7 +105,7 @@ public class BookItem {
 		super();
 	}
 	
-	public	BookItem(String	title,	String	author, int ISBN){
+	public	BookItem(String	title,	String	author, String ISBN){
 		this.title = title;
 		this.author = author;
 		this.ISBN = ISBN;

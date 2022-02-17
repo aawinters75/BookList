@@ -19,7 +19,7 @@ public class StartProgram {
 			System.out.print("Enter an author: ");
 			String author = in.nextLine();
 			System.out.print("Enter a 10 digit ISBN: ");
-			int ISBN = in.nextInt();
+			String ISBN = in.nextLine();
 			
 			BookItem toAdd = new BookItem(title, author, ISBN);
 			lih.insertItem(toAdd);
@@ -32,7 +32,7 @@ public class StartProgram {
 			System.out.print("Enter the author to delete: ");
 			String author = in.nextLine();
 			System.out.print("Enter the ISBN to delete: ");
-			int ISBN = in.nextInt();
+			String ISBN = in.nextLine();
 			
 			BookItem toDelete = new BookItem(title, author, ISBN);
 			lih.deleteItem(toDelete);
