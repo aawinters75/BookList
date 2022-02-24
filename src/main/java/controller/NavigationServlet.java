@@ -43,6 +43,7 @@ public class NavigationServlet extends HttpServlet {
 		// after all changes, we should redirect to the viewAllItems servlet
 		// The only time we don't is if they select to add a new item or edit
 		String path = "/viewAllItemsServlet";
+		
 		if (act.equals("delete")) {
 			
 			try {
